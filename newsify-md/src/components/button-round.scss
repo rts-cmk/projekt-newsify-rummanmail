@@ -1,0 +1,87 @@
+.settings-article {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 100%;
+}
+
+.btnDarkMode,
+.btnSkip,
+.btnSignIn,
+.btnContinue,
+.logIn-link {
+    border-radius: 40px;
+    margin: 1em 1em 1em 1em;
+    display: grid;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+.btnDarkMode {
+    border: 1px solid $design-color;
+    color: $design-color;
+    font-size: 18px;
+    //padding: 1em 6em;
+    max-width: 100%;
+
+    width: 80%;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.btnSkip {
+    background: none;
+    border: 1px solid $design-color;
+    color: $design-color;
+
+    font-size: 18px;
+    width: 80%;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    align-self: center;
+}
+
+.btnSignIn, .logIn-link {
+    background: none;
+    color: $text-general;
+    border: 1px solid $text-general;
+    font-size: 18px;
+
+    width: 80%;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    align-self: center;
+
+}
+
+.logIn-link {
+margin-bottom: 6em;
+}
+
+
+.btnContinue {
+    background-color: $design-color;
+    width: 100%;
+    color: $light;
+    font-size: 18px;
+    
+    width: 80%;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+
+}

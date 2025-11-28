@@ -1,0 +1,25 @@
+
+.loginpage__section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 3em;
+}
+
+.createAccount-link a {
+    color: $design-color;
+
+}
+
+.createAccount-link p {
+text-align: center;
+margin-top: 0.5em;
+
+
+.skip-signIn {
+    font-weight: bold;
+    color: #ba9c03;
+}
+
+}
+

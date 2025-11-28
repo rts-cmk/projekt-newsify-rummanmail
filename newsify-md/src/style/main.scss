@@ -1,0 +1,52 @@
+@use 'colors';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+ main {
+     //min-height: 75vh;
+     //margin-bottom: 6em;
+     max-width: 100%;
+     display: grid;
+     grid-template-columns: 1fr;
+    overflow: hidden;
+
+ }
+
+body {
+    font-family: "open sans", sans-serif;
+    width: 100%;
+    max-width: 100%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, .category {
+    font-family: "Playfair Display", serif;
+    color: $text-general;
+    font-weight: bolder;
+}
+
+ul.category {
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+// nav {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+// }
+
+// nav {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     justify-self: center;
+// }
