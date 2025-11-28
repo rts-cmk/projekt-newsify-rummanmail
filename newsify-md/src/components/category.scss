@@ -1,0 +1,224 @@
+button {
+    background: none;
+    border: none;
+    margin-right: 3em;
+}
+
+
+ li.category {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 15% 70% 15%;//4em 6em 12em; (lav noget min-max i stedet)
+    align-items: center;
+   
+    border-bottom: 1px solid #C5C5C5;
+    padding: 1.5em 0;
+    background-color: light-dark(#fff #404040);
+
+
+
+    h4 {
+        text-transform: uppercase;
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: flex-start;
+        font-weight: bolder;
+        font-size: 16px;
+        color: $text-general;
+    
+    }
+
+    .logo {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    i {
+        font-size: 18px;
+        padding: 0.5em;
+        color: $text-general;
+        justify-self: flex-end;
+        grid-column: 3;
+        grid-row: 1;
+
+        transition: transform 0.3s ease; /* Smooth transition for rotation */
+
+        &:hover {
+            cursor: pointer;
+        }
+        
+    }
+
+    .fetch-btn.clicked i {
+        transform: rotate(90deg);
+    }
+
+
+    .hidden {
+        display: none;
+    }
+
+
+
+
+    a {
+      position: relative; //for at kunne flytte den ved swipe;
+      background-color: #fff;
+      padding: 0.5em;
+
+      &.animate {
+        transition: all 0.4s ease-in-out;
+      } 
+
+    }
+
+   
+
+
+/* The switch - the box around the slider */
+.switch {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: flex-end;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    //background-color: red;//testing
+    overflow: visible;
+    margin-right: 1.5em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    //border: 2px solid black; //til test
+    z-index: 10;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 27px;
+    width: 27px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #4D861F !important;
+    z-index: 11;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #4D861F !important;
+    z-index: 11;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+
+
+
+///// ARTIKLER //////
+.articles-container {
+    max-width: 100%;
+    grid-column: span 3;
+    margin: 0 1.4em;
+    //border-top: 1px solid #C5C5C5;
+}
+
+.article {
+max-width: 100%;
+//padding: 1em 0.5em;
+transition: transform 0.3s ease;
+position: relative;
+
+
+&:first-of-type {
+    margin-top: 0.5em;
+}
+
+&:hover {
+    transform: scale(1.05);
+    z-index: 1; 
+}
+
+.fa-bookmark {
+font-size: 3em;
+}
+
+    a {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 1em;
+
+
+    .article-img {
+        max-width: 100%;
+        grid-column: 1;
+        border-radius: 15px;
+        grid-row: span 2;
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: bold;
+        grid-column: 2;
+        font-family: "Playfair Display", serif;;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 300;
+        grid-column: 2;
+        font-family: "open sans", sans-serif;
+    }
+
+        }
+    }
+
+}
+
+
